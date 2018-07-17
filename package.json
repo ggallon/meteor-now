@@ -1,6 +1,6 @@
 {
   "name": "rock-now",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Deploy meteor apps with one command using now.sh (https://zeit.co/now)",
   "repository": "https://github.com/ggallon/rock-now",
   "author": "Gwenaël Gallon",
