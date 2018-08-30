@@ -16,11 +16,9 @@ export const constructNowOptions = async () => {
   // get list of all environment variables user passed with the -e flag
   const environmentVariables = await getEnvironmentVariables();
   // construct the ROOT_URL variable
-  const rootUrl =
-    getEnvironmentVariable('ROOT_URL', environmentVariables) || 'http://localhost:3000';
+  const rootUrl = getEnvironmentVariable('ROOT_URL', environmentVariables) || 'http://localhost:3000';
   // construct the MONGO_URL variable
-  const mongoUrl =
-    getEnvironmentVariable('MONGO_URL', environmentVariables) || 'mongodb://127.0.0.1:27017';
+  const mongoUrl = getEnvironmentVariable('MONGO_URL', environmentVariables) || 'mongodb://127.0.0.1:27017';
 
   const remainingVariables = getRemainingVariables(environmentVariables);
 
