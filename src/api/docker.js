@@ -11,12 +11,13 @@ export const getDockerImage = async () => {
     return dockerImage;
   }
   const version = await getMicroVersion();
+  console.log(`meteor version : ${version}`);
   if (version < 4) {
-    return 'nodesource/jessie:0.10.43';
-  } else if (version < 7) {
-    return 'node:8.9.4';
+    return 'nodesource/jessie:0.10.48';
+  } else if (version < 6) {
+    return 'node:4.9.1';
   }
-  return 'node:8.11.2';
+  return 'node:8.11.4';
 };
 
 // check if mongo url was passed as a env var
