@@ -22,7 +22,7 @@
     "ora": "3.0.0",
     "prettier": "1.7.4",
     "split-file": "2.1.0",
-    "tar": "4.4.4",
+    "tar": "4.4.6",
     "yargs": "9.0.1"
   },
   "devDependencies": {
