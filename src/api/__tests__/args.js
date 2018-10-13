@@ -21,8 +21,6 @@ describe('args test', () => {
     expect(args).toEqual({
       $0: '-e',
       _: ['node'],
-      help: false,
-      version: false,
       deps: 'imagemagick',
       e: 'MONGO_URL=mongodb://127.0.0.1:27017',
     });
@@ -40,8 +38,6 @@ describe('args test', () => {
     expect(args).toEqual({
       $0: '-e',
       _: ['node'],
-      help: false,
-      version: false,
       deps: 'imagemagick',
       e: 'MONGO_URL=mongodb://127.0.0.1:27017',
       public: true,
