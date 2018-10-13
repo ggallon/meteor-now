@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
+  mode: 'production',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -14,7 +15,7 @@ module.exports = {
     new webpack.BannerPlugin({ banner: '#!/usr/bin/env node', raw: true }),
   ],
   module: {
-    loaders: [
+    rules: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
     ],
   },
